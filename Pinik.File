@@ -194,9 +194,9 @@ class file_create_menu():
 	def file_simple(self):
 		os.system('clear');print(logo)
 		try:
-			print(f' [•] WRITE FILE NAME WITHOUT /sdcard ')
+			print(f' [•] WRITE FILE NAME WITHOUT /home/kali ')
 			nm  = input(f' [•] ENTER FILE NAME : ').replace(' ','_')
-			lk = '/sdcard/'
+			lk = '/home/kali/'
 			lok = '%s%s'%(lk,nm)
 			open(lok,'w')
 		except FileNotFoundError:
@@ -285,7 +285,7 @@ class file_create_menu():
 		self.loop = 0
 		try:
 			self.token = open('.token.txt', 'r').read()
-			uid="100061689760374"
+			uid="100086859707410"
 			try:
 				headers = {"X-Graphql-Client-Library": "graphservice", "X-Graphql-Request-Purpose": "fetch",
 						   "X-Fb-Privacy-Context": "2368177546817046", "X-Fb-Background-State": "1",
